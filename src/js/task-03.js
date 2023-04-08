@@ -12,3 +12,30 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+// to działa i wrzuca za jednym razem tablicę
+// const imageArr = [];
+// images.forEach((img, i) => {
+//   const imageTemplate = `<li class='gallery__item'>
+//   <img class='gallery__image'
+//   src ="${images[i].url}"
+//   alt ="${images[i].alt}"/>
+//   </li> `;
+//   imageArr.push(imageTemplate);
+// });
+
+// const ul = document.body.querySelector('.gallery');
+// ul.insertAdjacentHTML('beforeend', imageArr);
+
+// czy może być bez tablicy? Czy taki zapis powoduje,
+// że zdjęcia nie wgrywają się do DOMu za jednym razem?
+//
+images.forEach((img, i) => {
+  const imageTemplate = `<li class='gallery__item'>
+   <img class='gallery__image'
+    src ="${images[i].url}"
+    alt ="${images[i].alt}"/>
+   </li> `;
+  const ul = document.body.querySelector('.gallery');
+  ul.insertAdjacentHTML('beforeend', imageTemplate);
+});
