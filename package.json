@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/jacobpavlik/goit-js-hw-06#readme",
   "devDependencies": {
-    "eslint": "^8.37.0",
+    "eslint": "^8.38.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5"
   }

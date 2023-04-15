@@ -5,6 +5,7 @@ const validInputLength =
 
 const lostFocus = () => {
   if (
+    // eslint-disable-next-line eqeqeq
     document.querySelector('#validation-input').value.length == validInputLength
   ) {
     textInput.classList.remove('invalid');
