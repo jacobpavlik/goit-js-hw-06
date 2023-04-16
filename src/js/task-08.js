@@ -6,13 +6,15 @@ form.addEventListener('submit', (event) => {
     elements: { email, password },
   } = event.currentTarget;
   if (email.value && password.value) {
-    console.log(`email: ${email.value}, password: ${password.value}`);
+    const container = { email: email.value, password: password.value };
+    console.log(container);
     form.reset();
   } else {
     alert('Oba pola muszą zostać wypełnione!');
   }
 });
 
+// console.log(`email: ${email.value}, password: ${password.value}`);
 // //poniżej działa, ale powyżej wg konspektu
 // const form = document.querySelector('.login-form');
 // // console.log(form.firstElementChild);
